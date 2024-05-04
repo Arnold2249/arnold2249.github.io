@@ -1,0 +1,160 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Saint;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #222;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+header .logo {
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff; /* White logo text */
+}
+
+
+nav ul {
+    list-style: none;
+    border-radius: 50%; /* Make the link circular */
+    box-shadow: 0 0 20px rgb(204, 0, 0); /* Add shadow */
+    padding: 35px 40px; /* Adjust padding to allow text to enter the circle */
+    display: inline-block; /* Ensure inline-block for padding to take effect */
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ccc; /* Light gray nav links */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+/* Define keyframes for color change animation */
+@keyframes colorChange {
+    0% { color: #1B7339; } /* Start color */
+    50% { color: #FFFFFF; } /* Midway color */
+    100% { color: #1B7339; } /* End color */
+  }
+  
+  /* Apply animation to the navigation links */
+  nav ul li a {
+    text-decoration: none;
+    color: #ccc; /* Light gray nav links */
+    font-size: 18px;
+    animation: colorChange 5s infinite; /* Change color every 5 seconds, repeat infinitely */
+  }
+  
+nav ul li a:hover {
+    color: #fff; /* White on hover */
+}
+
+.cart {
+    position: relative;
+}
+
+.cart .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff5555; /* Light gray cart count background */
+    color: #121212; /* Dark text for cart count */
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+.cart .cart-count:hover{
+    background-color: #cc0000;
+}
+
+.hero {
+    padding: 200px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff; /* White hero text */
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #ccc; /* Light gray hero text */
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #ff5555; /* Accent color */
+    color: #fff; /* White button text */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc0000; /* Darker accent color on hover */
+}
+
+.new-releases {
+    padding: 100px 0;
+}
+
+.new-releases h3 {
+    font-size: 36px;
+    margin-bottom: 60px;
+    color: #fff; /* White title text */
+}
+
+footer {
+    background-color: #222;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+/* Style for payment options */
+.payment-options {
+    display: block; /* Ensure it's a block-level element */
+    margin-top: 10px;
+    margin-bottom: 0px; /* Add space below the payment options */
+    
+}
+
+
+
+footer p {
+    font-size: 20px;
+ 
+}
+
+
